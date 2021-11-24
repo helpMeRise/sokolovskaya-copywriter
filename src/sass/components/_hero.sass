@@ -1,0 +1,122 @@
+.hero
+  padding-top: 45px
+  &__container
+    display: flex
+    flex-direction: column
+    align-content: space-between
+    flex-wrap: wrap
+    max-height: 600px
+  &__title
+    font-weight: 800
+    font-size: 37px
+    line-height: 45px
+    max-width: 475px
+    margin-bottom: 37px
+  &__text
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 87px
+  &__button
+    font-size: 24px
+    line-height: 29px
+    background-color: $add-color
+    padding: 20px 95px
+    max-width: 360px
+    border: 1px solid transparent
+    transition: 0.2s
+    @media (min-width: 1000px)
+      &:hover
+        background-color: transparent
+        border-color: $add-color
+  &__img
+    margin-top: -75px
+    max-width: 600px
+
+  @media (max-width: 1200px)
+    &__title
+      max-width: 400px
+      font-size: 32px
+    &__text
+      font-size: 22px
+    &__button
+      font-size: 22px
+      padding: 18px 80px
+      max-width: 330px
+    &__img
+      max-width: 500px
+
+  @media (max-width: 1023px)
+    &__title
+      max-width: 300px
+      font-size: 24px
+      line-height: 30px
+    &__text
+      font-size: 16px
+      margin-bottom: 40px
+    &__button
+      font-size: 20px
+      padding: 12px 40px
+      max-width: 250px
+    &__img
+      max-width: 415px
+
+  @media (max-width: 767px)
+    padding-top: 15px
+    &__container
+      flex-wrap: nowrap
+      max-height: unset
+      align-items: center
+    &__title
+      max-width: 229px
+      font-size: 18px
+      line-height: 20px
+      order: 2
+      margin-bottom: 15px
+    &__text
+      width: 203px
+      font-size: 11px
+      line-height: 13px
+      order: 2
+      margin-bottom: 25px
+    &__button
+      font-size: 14px
+      line-height: 17px
+      padding: 23px 85px
+      max-width: 270px
+      order: 2
+    &__img
+      order: 1
+      max-width: 100%
+      margin-top: 0
+      margin-bottom: 15px
+
+.socials
+  display: flex
+  justify-content: space-between
+  max-width: 130px
+  margin-bottom: 175px
+  &__link
+    width: 30px
+    height: 30px
+    display: block
+    transition: 1s
+    &:after
+      display: none
+    &_tg
+      background: url('../img/hero/tg.svg')
+    &_inst
+      background: url('../img/hero/inst.svg')
+    &_wa
+      background: url('../img/hero/wa.svg')
+    @media (min-width: 1000px)
+      &:hover
+        transform: scale(1.2) rotate(360deg)
+
+  @media (max-width: 1200px)
+    margin-bottom: 100px
+  @media (max-width: 1023px)
+    margin-bottom: 75px
+  @media (max-width: 767px)
+    margin-bottom: 15px
+    align-self: center
+    gap: 15px

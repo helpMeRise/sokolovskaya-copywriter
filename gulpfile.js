@@ -173,7 +173,7 @@ export const js = () => gulp
 export const img = () => gulp
 	.src(path.src.img)
 	 .pipe(gulpif(!dev, tinypng({
-	 	key: 'API_KEY',
+	 	key: 'ZQVB3m9048r3yrwmskS17SpylJGmJqMg',
 	 	summarize: true,
 	 	log: true
 	 })))
