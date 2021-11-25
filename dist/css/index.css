@@ -507,7 +507,7 @@ p {
   align-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-height: 600px;
+  max-height: 740px;
 }
 
 .hero__title {
@@ -555,8 +555,8 @@ p {
   width: 30px;
   height: 30px;
   display: block;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .socials__link:after {
@@ -575,6 +575,53 @@ p {
   background: url("../img/hero/wa.svg");
 }
 
+.about {
+  padding: 30px 0 0;
+}
+
+.about__container {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #C6E2E7;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.about__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 428px;
+  gap: 30px;
+}
+
+.about__text {
+  line-height: 26px;
+}
+
+.about__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 25px 100px;
+  max-width: 600px;
+}
+
 @media (min-width: 1000px) {
   a:hover:after {
     width: 100%;
@@ -586,8 +633,8 @@ p {
   }
 
   .socials__link:hover {
-    -webkit-transform: scale(1.2) rotate(360deg);
-    transform: scale(1.2) rotate(360deg);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
   }
 }
 
