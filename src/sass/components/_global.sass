@@ -79,17 +79,30 @@ h1, h2, h3, p
     padding: 0 25px
 
 .section
-  padding: 30px 0
+  padding: 60px 0
   &__title
+    position: relative
     font-weight: 800
     font-size: 36px
     line-height: 44px
     margin-bottom: 30px
+    padding-left: 41px
+    &:before
+      position: absolute
+      content: ''
+      width: 36px
+      height: 36px
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
     @media (max-width: 1280px)
       margin-bottom: 40px
 
     @media (max-width: 1023px)
-      font-size: 14px
+      font-size: 24px
       margin-bottom: 30px
 
     @media (max-width: 767px)

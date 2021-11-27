@@ -12,6 +12,7 @@
     line-height: 45px
     max-width: 475px
     margin-bottom: 37px
+    padding-left: 0
   &__text
     font-size: 24px
     line-height: 29px
@@ -31,7 +32,12 @@
   &__img
     margin-top: -75px
     max-width: 600px
+  &__photo
+    max-width: 100%
 
+  @media (max-width: 1330px)
+    &__img
+      max-width: 500px
   @media (max-width: 1200px)
     &__title
       max-width: 400px

@@ -35,8 +35,8 @@ import webpack from 'webpack';
 
 
 //img
-import tinypng from 'gulp-tinypng-compress';
-//import gulpImg from 'gulp-image';
+//import tinypng from 'gulp-tinypng-compress';
+import gulpImg from 'gulp-image';
 import gulpWebp from 'gulp-webp';
 import gulpAvif from 'gulp-avif';
 import svgSprite from 'gulp-svg-sprite';
@@ -58,7 +58,7 @@ const path = {
 		html: 'src/*.html',
 		pug: 'src/pug/*.pug',
 		sass: ['src/sass/**/*.sass', 'src/sass/**/*.scss'],
-		js: 'src/js/index.js',
+		js: ['src/js/libs/*.js', 'src/js/index.js'],
 		img: 'src/img/**/*.*',
 		svg: 'src/svg/**/*.svg',
 		imgF: 'src/img/**/*.{jpg,jpeg,png}',
@@ -172,19 +172,19 @@ export const js = () => gulp
 
 export const img = () => gulp
 	.src(path.src.img)
-	 .pipe(gulpif(!dev, tinypng({
-	 	key: 'ZQVB3m9048r3yrwmskS17SpylJGmJqMg',
-	 	summarize: true,
-	 	log: true
-	 })))
-	//.pipe(gulpif(!dev, gulpImg({
-	//	optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
-	//	pngquant: ['--speed=1', '--force', 256],
-	//	zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
-	//		mozjpeg: ['-optimize', '-progressive'],
-	//	gifsicle: ['--optimize'],
-	//	svgo: true,
-	//})))
+	// .pipe(gulpif(!dev, tinypng({
+	// key: 'ZQVB3m9048r3yrwmskS17SpylJGmJqMg',
+	// summarize: true,
+	// log: true
+	// })))
+	.pipe(gulpif(!dev, gulpImg({
+		optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
+		pngquant: ['--speed=1', '--force', 256],
+		zopflipng: ['-y', '--lossy_8bit', '--lossy_transparent'],
+			mozjpeg: ['-optimize', '-progressive'],
+		gifsicle: ['--optimize'],
+		svgo: true,
+	})))
 	.pipe(gulp.dest(path.dist.img))
 	.pipe(browserSync.stream({
 		once: true

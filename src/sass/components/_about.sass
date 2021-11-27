@@ -2,20 +2,108 @@
   padding: 30px 0 0
   &__container
     padding-bottom: 60px
-    border-bottom: 1px solid $add-color
   &__content
+    position: relative
     display: flex
     justify-content: space-between
+    &::after
+      position: absolute
+      content: ''
+      bottom: -60px
+      left: 0
+      width: 100%
+      height: 1px
+      background-color: $add-color
   &__info
     display: flex
     flex-direction: column
     max-width: 428px
     gap: 30px
+  &__title
+    &:before
+      background-image: url("../img/about/icon.png")
   &__text
     line-height: 26px
+  &__list
+    list-style: disc
+  &__item
+    margin-left: 20px
   &__images
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
-    gap: 25px 100px
-    max-width: 600px
+    &-wrap
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      max-width: 600px
+      row-gap: 25px
+  &__image
+    transition: 0.5s
+    max-width: 240px
+    cursor: pointer
+    &:last-child
+      margin: 0 auto
+  &__certificate
+    max-width: 100%
+
+  @media (max-width: 1330px)
+    &__images
+      &-wrap
+        max-width: 500px
+        row-gap: 5px
+
+  @media (max-width: 1200px)
+    &__info
+      max-width: 400px
+    &__text
+      font-size: 16px
+
+  @media (max-width: 1023px)
+    &__images
+      display: flex
+      max-width: 360px
+      height: 250px
+      margin-right: 0
+      &-wrap
+        flex-direction: row
+        max-width: unset
+        flex-wrap: nowrap
+        gap: 0
+    &__image
+      display: flex
+      justify-content: center
+      max-width: 100%
+
+  @media (max-width: 767px)
+    &__content
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+    &__info
+      margin-bottom: 25px
+      gap: 15px
+    &__title
+      padding-left: 25px
+      &:before
+        width: 21px
+        height: 21px
+    &__text
+      font-size: 11px
+      line-height: 13px
+      max-width: 251px
+    &__list
+      font-size: 11px
+    &__item
+      margin-left: 15px
+    &__images
+      display: flex
+      max-width: 100%
+      height: unset
+      &-wrap
+        flex-direction: row
+        max-width: unset
+        
+        flex-wrap: nowrap
+        gap: 0
+    &__image
+      display: flex
+      justify-content: center
+      max-width: 100%

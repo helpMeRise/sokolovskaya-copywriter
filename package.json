@@ -26,6 +26,7 @@
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
+    "gulp-image": "^6.2.1",
     "gulp-plumber": "^1.2.1",
     "gulp-pretty-html": "^2.0.10",
     "gulp-pug": "^5.0.0",

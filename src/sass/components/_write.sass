@@ -1,0 +1,65 @@
+.write
+  &__title
+    &:before
+      background-image: url('../img/write/icon.png')
+  &__list
+    display: grid
+    row-gap: 30px
+    &-title
+      grid-area: title
+      font-weight: 300
+      font-size: 24px
+      line-height: 29px
+  &__item
+    position: relative
+    text-indent: 25px
+    &:before
+      position: absolute
+      content: ''
+      width: 18px
+      height: 22px
+      left: 0
+      top: 0
+      background: url('../img/write/finger.png') center / contain no-repeat
+  &__link
+    border-bottom: 1px solid $color
+  &__articles
+    margin-bottom: 40px
+    &-list
+      grid-template-areas: 'title title' 'first fourth' 'second fifth' 'third sixth'
+    &-item
+      max-width: 455px
+      &:nth-child(2)
+        grid-area: first
+      &:nth-child(3)
+        grid-area: second
+      &:nth-child(4)
+        grid-area: third
+      &:nth-child(5)
+        grid-area: fourth
+      &:nth-child(6)
+        grid-area: fifth
+      &:nth-child(7)
+        grid-area: sixth
+  &__posts
+    margin-bottom: 40px      
+    &-list
+      grid-template-areas: 'title title' 'first-post third-post' 'second-post fourth-post'
+    &-item
+      max-width: 455px
+      &:nth-child(2)
+        grid-area: first-post
+      &:nth-child(3)
+        grid-area: second-post
+      &:nth-child(4)
+        grid-area: third-post
+      &:nth-child(5)
+        grid-area: fourth-post
+  &__letters
+    margin-bottom: 40px      
+    &-list
+      grid-template-areas: 'title title' 'first-letter .'
+    &-item
+      max-width: 455px
+      &:nth-child(2)
+        grid-area: first-letter
