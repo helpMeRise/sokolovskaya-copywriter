@@ -1,4 +1,5 @@
 .write
+  padding-top: 60px
   &__title
     &:before
       background-image: url('../img/write/icon.png')
@@ -55,11 +56,36 @@
         grid-area: third-post
       &:nth-child(5)
         grid-area: fourth-post
-  &__letters
-    margin-bottom: 40px      
+  &__letters    
     &-list
       grid-template-areas: 'title title' 'first-letter .'
     &-item
       max-width: 455px
       &:nth-child(2)
         grid-area: first-letter
+
+  @media screen and ( max-width: 1023px )
+    &__articles, &__posts, &__letters
+      &-item
+        max-width: 350px
+        font-size: 16px
+
+  @media screen and ( max-width: 767px )
+    &__list
+      gap: 10px
+      display: flex
+      flex-direction: column
+      &-title
+        font-size: 14px
+        line-height: 17px
+    &__item
+      text-indent: 15px
+      font-size: 11px
+      line-height: 13px
+      &:before
+        width: 13px
+        height: 12px
+    &__articles, &__posts, &__letters
+      display: flex
+      justify-content: center
+    

@@ -1,0 +1,102 @@
+.price
+  padding-top: 60px
+  &__title
+    &::before
+      background-image: url('../img/price/icon.png')
+  &__info
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    align-content: space-between
+    max-height: 300px
+    row-gap: 30px
+    margin-bottom: 50px
+  &__text
+    max-width: 515px
+    line-height: 26px
+    &_bold
+      font-weight: 800
+  &__subtitle
+    font-weight: 300
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 22px
+  &__list
+    display: flex
+    justify-content: space-evenly
+    flex-wrap: wrap
+    gap: 30px
+  &__item
+    width: 380px
+    height: 314px
+    display: flex
+    flex-direction: column
+    padding: 40px 20px 40px 40px
+    &-title
+      align-self: center
+      text-align: center
+      font-weight: 300
+      font-size: 24px
+      line-height: 29px
+      margin-bottom: 20px
+    &-item
+      position: relative
+      line-height: 26px
+      padding-left: 10px
+      &::before
+        position: absolute
+        content: ''
+        width: 3px
+        height: 3px
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        background-color: $color
+    &_mini
+      border: 1px solid $add-color
+    &_basic
+      background-color: $add-color
+    &_full
+      background-color: $color
+      color: $color-light
+      .price__item-item
+        &::before
+          background-color: $color-light
+
+  @media screen and ( max-width: 1300px )
+    &__info
+      max-height: 400px
+    &__text 
+      max-width: 450px
+
+  @media screen and ( max-width: 1024px )
+    &__info
+      max-height: unset
+    &__text
+      max-width: unset
+      
+  @media screen and ( max-width: 768px )
+    padding-top: 30px
+    &__text
+      font-size: 11px
+      line-height: 13px
+    &__subtitle
+      font-size: 14px
+      line-height: 17px
+      margin-bottom: 15px
+    &__list
+      gap: 15px
+    &__item
+      max-width: 270px
+      padding: 15px
+      height: unset
+      &-title
+        font-size: 14px
+        line-height: 17px
+      &-item
+        padding-left: 5px
+        font-size: 11px
+        line-height: 13px
+        &::before
+          width: 1px
+          height: 1px

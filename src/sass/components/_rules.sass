@@ -1,0 +1,17 @@
+.rules
+  padding-top: 60px
+  &__title
+    &::before
+      background-image: url('../img/rules/icon.png')
+  &__text
+    line-height: 26px
+    &:first-of-type
+      margin-bottom: 15px
+    &:last-of-type
+      max-width: 756px
+
+  @media screen and ( max-width: 767px )
+    padding-top: 30px
+    &__text
+      font-size: 11px
+      line-height: 13px

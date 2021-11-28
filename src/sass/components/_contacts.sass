@@ -1,0 +1,41 @@
+.contacts
+  &__contaciner
+    display: flex
+    flex-direction: column
+  &__title
+    &::before
+      background-image: url('../img/contacts/icon.png')
+  &__text
+    line-height: 26px
+    margin-bottom: 15px
+    &:first-of-type
+      max-width: 310px
+    &:nth-of-type(2)
+      max-width: 525px
+  &__list
+    margin: 0
+    padding-left: 20px
+    margin-bottom: 15px
+  &__creator
+    align-self: flex-end
+    font-size: 12px
+    line-height: 15px
+    text-align: right
+    color: #555555
+  &__link
+    border-bottom: 1px solid #555555
+  .socials
+    margin: 0 auto 80px 
+
+  @media screen and ( max-width: 767px )
+    &__text
+      font-size: 11px
+      line-height: 13px
+    &__list
+      padding-left: 10px
+    &__item
+      font-size: 11px
+      line-height: 13px
+    .socials
+      margin-bottom: 30px
+      

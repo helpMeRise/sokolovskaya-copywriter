@@ -1,0 +1,57 @@
+.edit
+  padding-top: 60px
+  &__title
+    &::before
+      background-image: url('../img/edit/icon.png')
+  &__list
+    display: grid
+    grid-template-areas: 'edit-first edit-third' 'edit-second edit-fourth'
+    row-gap: 30px
+  &__item
+    max-width: 520px
+    &:nth-child(1)
+      grid-area: edit-first
+    &:nth-child(2)
+      grid-area: edit-second
+    &:nth-child(3)
+      grid-area: edit-third
+    &:nth-child(4)
+      grid-area: edit-fourth
+    position: relative
+    text-indent: 25px
+    &:before
+      position: absolute
+      content: ''
+      width: 18px
+      height: 22px
+      left: 0
+      top: 0
+      background: url('../img/write/finger.png') center / contain no-repeat
+  &__link
+    border-bottom: 1px solid $color
+
+  @media screen and ( max-width: 1023px )
+    &__item
+      font-size: 16px
+      max-width: 350px
+
+  @media screen and ( max-width: 767px )
+    padding-top: 30px
+    &__container
+      display: flex
+      flex-direction: column
+    &__list
+      row-gap: 10px
+      display: flex
+      flex-direction: column
+      align-self: center
+        font-size: 14px
+        line-height: 17px
+    &__item
+      text-indent: 15px
+      font-size: 11px
+      line-height: 13px
+      &:before
+        width: 13px
+        height: 12px
+      

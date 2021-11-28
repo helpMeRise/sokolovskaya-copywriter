@@ -49,7 +49,11 @@
       <button class="button hero__button">Заказать текст</button>
 
       <div class="hero__img">
-        <img src="img/hero/photo.jpg" alt="Фотография Светланы" class="hero__photo">
+        <picture>
+          <source srcset="img/hero/photo.avif" format="image/avif">
+          <source srcset="img/hero/photo.webp" format="image/webp">
+          <img src="img/hero/photo.jpg" alt="Фотография Светланы" class="hero__photo">
+        </picture>
       </div>
 
     </div>
@@ -71,55 +75,292 @@
         <div class="about__images">
           <ul class="about__images-wrap">
             <li class="about__image">
-              <img src="img/about/cert_1.jpg" alt="" class="about__certificate">
+              <picture>
+                <source srcset="img/about/cert_1.avif" format="image/avif">
+                <source srcset="img/about/cert_1.webp" format="image/webp">
+                <img src="img/about/cert_1.jpg" alt="Сертификат пройденного курса" class="about__certificate">
+              </picture>
             </li>
             <li class="about__image">
-              <img src="img/about/cert_2.jpg" alt="" class="about__certificate">
+              <picture>
+                <source srcset="img/about/cert_2.avif" format="image/avif">
+                <source srcset="img/about/cert_2.webp" format="image/webp">
+                <img src="img/about/cert_2.jpg" alt="Сертификат пройденного курса" class="about__certificate">
+              </picture>
             </li>
             <li class="about__image">
-              <img src="img/about/cert_3.jpg" alt="" class="about__certificate">
+              <picture>
+                <source srcset="img/about/cert_3.avif" format="image/avif">
+                <source srcset="img/about/cert_3.webp" format="image/webp">
+                <img src="img/about/cert_3.jpg" alt="Сертификат пройденного курса" class="about__certificate">
+              </picture>
             </li>
           </ul>
         </div>
       </div>
-
+      <div class="section__line"></div>
     </div>
   </section>
 
   <section class="section write">
     <div class="container write__container">
       <h2 class="section__title write__title">Пишу</h2>
+
       <div class="write__articles">
         <ul class="write__list write__articles-list">
           <h3 class="write__list-title">Статьи в СМИ</h3>
 
-          <li class="write__item write__articles-item">Журнал «Сноб»: <a href="https://snob.ru/entry/237277/?amp" class="write__link" target="_blank"> Бедные vs богатые. У каких родителей больше шансов вырастить миллионера.</a></li>
+          <li class="write__item write__articles-item">Журнал «Сноб»: <a href="https://snob.ru/entry/237277/?amp" class="write__link" target="_blank"> Бедные vs богатые. У каких родителей больше шансов вырастить миллионера</a>.</li>
           <li class="write__item write__articles-item">Журнал «EVA.RU»: <a href="https://eva.ru/travel/growth/read-zachem-banki-predlagayut-mne-investirovanie-ya-dej-stvitel-no-mogu-zarabotat--a-skol-ko-ehto-ne-obman-na-vse-voprosy-otvechaet-finansist-73110.htm" class="write__link" target="_blank">Зачем банки предлагают мне инвестирование? Я действительно могу заработать? А сколько? Это не обман?</a> </li>
-          <li class="write__item write__articles-item">Журнал «Сноб»:  Что делать, если муж тратит все деньги семьи.</li>
-          <li class="write__item write__articles-item">Журнал «Инвест-Форсайт»: Провальные стратегии инвестирования в 2020-2021 годах.</li>
-          <li class="write__item write__articles-item">Журнал «Лиза»: «Мам, дай денег»: 5 принципов, которые помогут детям ответственно относиться к финансам и начать копить.</li>
-          <li class="write__item write__articles-item">Журнал «Сноб»: Как избавиться от кредитов и долгов.</li>
+          <li class="write__item write__articles-item">Журнал «Сноб»: <a href="https://snob.ru/entry/237776/" class="write__link" target="_blank"> Что делать, если муж тратит все деньги семьи</a>.</li>
+          <li class="write__item write__articles-item">Журнал «Инвест-Форсайт»: <a href="https://www.if24.ru/samye-provalnye-strategii-investirovaniya-2020-2021-gg/" class="write__link" target="_blank">Провальные стратегии инвестирования в 2020-2021 годах.</a></li>
+          <li class="write__item write__articles-item">Журнал «Лиза»: <a href="https://lisa.ru/moy-rebenok/deti/689561--mam-daj-deneg-5-principov-kotorye-pomogut-detyam-otvetstvenno-otnositsya-k-finansam-i-nachat-kopit/" class="write__link" target="_blank">«Мам, дай денег»: 5 принципов, которые помогут детям ответственно относиться к финансам и начать копить.</a></li>
+          <li class="write__item write__articles-item">Журнал «Сноб»: <a href="https://snob.ru/entry/238129/" class="write__link" target="_blank">Как избавиться от кредитов и долгов</a>.</li>
         </ul>
       </div>
+
       <div class="write__posts">
         <ul class="write__list write__posts-list">
           <h3 class="write__list-title">Посты</h3>
 
-          <li class="write__item write__posts-item">Закрытый телеграм-канал Елены Мамаевой для выпускников курса по инвестициям: экспертное мнение и советы.</li>
-          <li class="write__item write__posts-item">Инстаграм трейдера Игоря Кочергина: личные и экспертные тексты про финансы и инвестиции. Например, про привычки, увеличивающие доход или как окупить интенсив по инвестициям.</li>
+          <li class="write__item write__posts-item">Закрытый телеграм-канал <a href="https://www.instagram.com/mamaeva_finance/" class="write__link" target="_blank">Елены Мамаевой</a>  для выпускников курса по инвестициям: экспертное мнение и советы.</li>
+          <li class="write__item write__posts-item">Инстаграм трейдера <a href="https://www.instagram.com/igvestor/" class="write__link" target="_blank"> Игоря Кочергина</a>: личные и экспертные тексты про финансы и инвестиции. Например, про<a href="https://www.instagram.com/p/CFcOmc4oQ-2/?utm_source=ig_web_copy_link" class="write__link" target="_blank">привычки, увеличивающие доход</a> или <a href="https://www.instagram.com/p/CF1-DnQAeE1/?utm_source=ig_web_copy_link" class="write__link" target="_blank">как окупить интенсив по инвестициям</a> .</li>
           <li class="write__item write__posts-item">Блог арбитражного судьи: экспертные посты про банкротство физлиц, направленные на повышение лояльности и доверия.</li>
-          <li class="write__item write__posts-item">Инстаграм адвоката Марии Прилепской: личные и экспертные тексты про защиту прав женщин и детей. Например, про алименты на супругу или трудовые права беременных.</li>
+          <li class="write__item write__posts-item">Инстаграм адвоката <a href="https://www.instagram.com/advokat_prilepskaya/" class="write__link" target="_blank">Марии Прилепской</a>: личные и экспертные тексты про защиту прав женщин и детей. Например, про <a href="https://www.instagram.com/p/COu3xXahEPr/?utm_source=ig_web_copy_link" class="write__link" target="_blank">алименты на супругу</a> или <a href="https://www.instagram.com/p/CMjXZCyhGJY/?utm_source=ig_web_copy_link" class="write__link" target="_blank">трудовые права беременных</a>.</li>
         </ul>
       </div>
+
       <div class="write__letters">
         <ul class="write__list write__letters-list">
           <h3 class="write__list-title">Письма</h3>
 
-          <li class="write__item write__letters-item">Бесплатный тренинг Игоря Кочергина по инвестированию с нуля. Например, письмо-напоминание и продажа платного продукта.</li>
+          <li class="write__item write__letters-item">Бесплатный тренинг <a href="https://www.instagram.com/igvestor/" class="write__link" target="_blank">Игоря Кочергина</a> по инвестированию с нуля. Например,<a href="https://mail.yandex.ru/u2709/print?mid=173670060630483223&_uid=196484606" class="write__link" target="_blank"></a> письмо-напоминание и <a href="https://mail.yandex.ru/u2709/print?mid=173670060630483294&_uid=196484606" class="write__link" target="_blank">продажа платного продукта</a>.</li>
         </ul>
       </div>
+       
+      <div class="section__line"></div>
     </div>
   </section>
+
+  <section class="section edit">
+    <div class="container edit__container">
+      <h2 class="section__title edit__title">Редактирую</h2>
+      <ul class="edit__list">
+        <li class="edit__item">КПБ от <a href="https://www.instagram.com/nelly_armani/" class="edit__link" target="_blank">Нелли Армани</a>: вычитала и отредактировала консекты вебинаров, презентации и чек-листы. </li>
+        <li class="edit__item">Методичка к обучающему фильму <a href="https://www.instagram.com/chebanov/" class="edit__link" target="_blank">Ивана Чебанова</a>.</li>
+        <li class="edit__item"><a href="https://disk.yandex.ru/i/Io9Tx55nnrrrog" class="edit__link" target="_blank">E-mail письма</a> для бизнеса: отредактировала заголовки, исправила грамматические ошибки.</li>
+        <li class="edit__item"><a href="https://disk.yandex.ru/i/2Ku-IZ-ZLjv68g" class="edit__link" target="_blank">Пособие</a> по финансовой грамотности от Игоря Кочергина. </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section feedback">
+    <div class="container feedback__container">
+      <h2 class="section__title feedback__title">Что говорят клиенты</h2>
+      <p class="section__subtitle feedback__subtitle">Эти люди доверяют мне. Теперь очередь за вами :)</p>
+      <div class="feedback__slider">
+        <ul class="feedback__list">
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/1.avif" format="image/avif">
+              <source srcset="img/feedback/1.webp" format="image/webp">
+              <img src="img/feedback/1.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+            
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/2.avif" format="image/avif">
+              <source srcset="img/feedback/2.webp" format="image/webp">
+              <img src="img/feedback/2.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/3.avif" format="image/avif">
+              <source srcset="img/feedback/3.webp" format="image/webp">
+              <img src="img/feedback/3.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/4.avif" format="image/avif">
+              <source srcset="img/feedback/4.webp" format="image/webp">
+              <img src="img/feedback/4.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/5.avif" format="image/avif">
+              <source srcset="img/feedback/5.webp" format="image/webp">
+              <img src="img/feedback/5.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/6.avif" format="image/avif">
+              <source srcset="img/feedback/6.webp" format="image/webp">
+              <img src="img/feedback/6.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/7.avif" format="image/avif">
+              <source srcset="img/feedback/7.webp" format="image/webp">
+              <img src="img/feedback/7.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/8.avif" format="image/avif">
+              <source srcset="img/feedback/8.webp" format="image/webp">
+              <img src="img/feedback/8.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/9.avif" format="image/avif">
+              <source srcset="img/feedback/9.webp" format="image/webp">
+              <img src="img/feedback/9.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/10.avif" format="image/avif">
+              <source srcset="img/feedback/10.webp" format="image/webp">
+              <img src="img/feedback/10.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/11.avif" format="image/avif">
+              <source srcset="img/feedback/11.webp" format="image/webp">
+              <img src="img/feedback/11.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/12.avif" format="image/avif">
+              <source srcset="img/feedback/12.webp" format="image/webp">
+              <img src="img/feedback/12.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/13.avif" format="image/avif">
+              <source srcset="img/feedback/13.webp" format="image/webp">
+              <img src="img/feedback/13.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+
+          <li class="feedback__item">
+            <picture>
+              <source srcset="img/feedback/14.avif" format="image/avif">
+              <source srcset="img/feedback/14.webp" format="image/webp">
+              <img src="img/feedback/14.jpg" alt="Скриншот отзыва" class="feedback__img">
+            </picture>
+          </li>
+        </ul>
+      </div>
+      <div class="section__line"></div>
+    </div>
+  </section>
+
+  <section class="section price">
+    <div class="container price__container">
+      <h2 class="section__title price__title">Сколько стоит</h2>
+      <div class="price__info">
+        <p class="price__text">Пост — <span class="price__text_bold">2 000 р.</span>  <br>
+          Получите экспертный, личный или продающий текст, который доведёт ваших читателей до целевого действия. Они поставят лайк, напишут комментарии или купят продукт по ссылке в шапке профиля.</p>
+        <p class="price__text">Письма для рассылок — от <span class="price__text_bold">1 000 р./шт.</span> <br>
+          Сейчас здорово заходят письма в чат-ботах — используйте этот инструмент, чтобы прогреть аудиторию, продать ей продукт или помочь в решении вопроса.  </p>
+        <p class="price__text">Статья в топ-СМИ — от <span class="price__text_bold">30 т.р.</span> <br>
+          Заявите о себе на страницах известных бизнес- или лайфстайл-журналах. Покажите, что вашему мнению можно и нужно доверять. В стоимость работы входит копирайтинг и взаимодействие с журналами: я договорюсь о размещении статьи, напишу текст
+          и проконтролирую выход материала.</p>
+      </div>
+      <div class="price__socials">
+        <h3 class="price__subtitle">Пакеты для социальных сетей</h3>
+        <ul class="price__list">
+          <li class="price__item price__item_mini">
+            <h4 class="price__item-title">МИНИ <br> 17 000 р.</h4>
+            <ul class="price__item-list">
+              <li class="price__item-item">Контент-план: 8 постов</li>
+              <li class="price__item-item">Написание 8 постов</li>
+            </ul>
+          </li>
+          <li class="price__item price__item_basic">
+            <h4 class="price__item-title">БАЗОВЫЙ <br> 25 000 р.</h4>
+            <ul class="price__item-list">
+              <li class="price__item-item">Контент-план: 12 постов</li>
+              <li class="price__item-item">Написание 12 постов</li>
+            </ul>
+          </li>
+          <li class="price__item price__item_full">
+            <h4 class="price__item-title">ПОЛНОЕ <br> ПОГРУЖЕНИЕ <br> 57 000 р.</h4>
+            <ul class="price__item-list">
+              <li class="price__item-item">Подробный аудит профиля</li>
+              <li class="price__item-item">Контент-план: 15 постов</li>
+              <li class="price__item-item">Написание 15 постов</li>
+              <li class="price__item-item">Подбор хештегов к постам</li>
+              <li class="price__item-item">Контент-план для сторис: 20 дней</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="section__line"></div>
+    </div>
+  </section>
+
+  <section class="section rules">
+    <div class="container rules__container">
+      <h2 class="section__title rules__title">Как я работаю</h2>
+      <p class="rules__text">Удалённо и по договору. Оформлена замозанятость.</p>
+      <p class="rules__text">Иногда, чтобы понять, хорошие ли тексты, нужно время — пост в инстаграме могут комментировать несколько дней, да и статистика по e-mail письмам тоже не за минуту собирается. Я буду очень вам благодарна, если позже вы расскажете мне о реакции вашей аудитории.</p>
+    </div>
+  </section>
+
+  <footer class="section contacts">
+    <div class="container contacts__container">
+      <h2 class="section__title contacts__title">Свяжитесь со мной</h2>
+      <p class="contacts__text">Напишите мне — лучше в телеграм, чтобы получить быстрый ответ.</p>
+      <p class="contacts__text">В своём первом сообщении можете сразу дать мне ответы на вопросы ниже. Так наша коммуникация станет удобнее:</p>
+      <ol class="contacts__list">
+        <li class="contacts__item">Для какого проекта нужны тексты?</li>
+        <li class="contacts__item">Отправьте ссылку на проект. </li>
+        <li class="contacts__item">Что конкретно нужно сделать?</li>
+        <li class="contacts__item">Кто ваша ЦА?</li>
+        <li class="contacts__item">Какие сроки и почему важно успеть именно к этой дате?</li>
+        <li class="contacts__item">Почему обратились именно ко мне?</li>
+      </ol>
+
+      <ul class="socials">
+        <li class="socials__item">
+          <a href="https://t.me/Sokolovskaya" class="socials__link socials__link_tg" target="_blank"></a>
+        </li>
+        <li class="socials__item">
+          <a href="http://instagram.com/sokolovskaya_reserve" class="socials__link socials__link_inst" target="_blank"></a>
+        </li>
+        <li class="socials__item">
+          <a href="https://wa.me/89504962271" class="socials__link socials__link_wa" target="_blank"></a>
+        </li>
+      </ul>
+
+      <p class="contacts__creator">Создатель <br> <a href="https://www.melnykmaksym.ru" class="contacts__link" target="_blank">Максим Мельник</a></p>
+    </div>
+  </footer>
   
 </body>
 </html>
