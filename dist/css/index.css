@@ -2052,6 +2052,11 @@ p {
     margin-bottom: 15px;
   }
 
+  .price__info {
+    row-gap: 15px;
+    margin-bottom: 25px;
+  }
+
   .price__list {
     gap: 15px;
   }
@@ -2197,7 +2202,7 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 270px;
+    max-width: 100%;
     height: unset;
   }
 
@@ -2279,6 +2284,12 @@ p {
     justify-content: center;
   }
 
+  .write__articles:not(:last-child),
+  .write__posts:not(:last-child),
+  .write__letters:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   .edit {
     padding-top: 15px;
     padding-bottom: 30px;
@@ -2336,11 +2347,16 @@ p {
 
   .rules {
     padding-top: 30px;
+    padding-bottom: 15px;
   }
 
   .rules__text {
     font-size: 11px;
     line-height: 13px;
+  }
+
+  .contacts {
+    padding-top: 15px;
   }
 
   .contacts__text {
