@@ -1355,10 +1355,16 @@ p {
 }
 
 .hero__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 24px;
   line-height: 29px;
   background-color: #C6E2E7;
-  padding: 20px 95px;
+  padding: 20px 0;
   max-width: 360px;
   border: 1px solid transparent;
   -webkit-transition: 0.2s;
@@ -1979,7 +1985,7 @@ p {
 
   .hero__button {
     font-size: 20px;
-    padding: 12px 40px;
+    padding: 12px 0;
     max-width: 250px;
   }
 
@@ -2137,8 +2143,8 @@ p {
   .hero__button {
     font-size: 14px;
     line-height: 17px;
-    padding: 23px 85px;
-    max-width: 270px;
+    padding: 23px 0;
+    width: 270px;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;

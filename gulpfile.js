@@ -207,7 +207,7 @@ export const svg = () => gulp.src(path.src.svg)
 export const webp = () => gulp
 	.src(path.src.imgF)
 	.pipe(gulpWebp({
-		quality: dev ? 100 : 60
+		quality: dev ? 100 : 80
 	}))
 	.pipe(gulp.dest(path.dist.img))
 	.pipe(browserSync.stream({
@@ -218,7 +218,7 @@ export const webp = () => gulp
 export const avif = () => gulp
 	.src(path.src.imgF)
 	.pipe(gulpAvif({
-		quality: dev ? 100 : 50
+		quality: dev ? 100 : 75
 	}))
 	.pipe(gulp.dest(path.dist.img))
 	.pipe(browserSync.stream({
