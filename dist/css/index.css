@@ -1312,6 +1312,14 @@ p {
   background-color: #C6E2E7;
 }
 
+.section__br_desctop {
+  display: inline;
+}
+
+.section__br_mob {
+  display: none;
+}
+
 .hero {
   padding-top: 45px;
 }
@@ -1405,10 +1413,6 @@ p {
   padding: 30px 0 0;
 }
 
-.about__container {
-  padding-bottom: 60px;
-}
-
 .about__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1450,6 +1454,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   max-width: 460px;
   margin-right: 0;
 }
@@ -1472,15 +1479,23 @@ p {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   max-width: 100%;
 }
 
 .about__certificate {
-  max-width: 100%;
+  max-width: 98%;
+  -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .write {
   padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .write__title:before {
@@ -1595,7 +1610,8 @@ p {
 }
 
 .edit {
-  padding-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 .edit__title::before {
@@ -1645,7 +1661,7 @@ p {
 }
 
 .feedback {
-  padding-bottom: 60px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -2069,7 +2085,7 @@ p {
   }
 
   .section__title {
-    font-size: 12px;
+    font-size: 17px;
     line-height: 21px;
     margin-bottom: 15px;
     padding-left: 20px;
@@ -2139,6 +2155,11 @@ p {
     gap: 15px;
   }
 
+  .about {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
   .about__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2160,7 +2181,7 @@ p {
   .about__text {
     font-size: 11px;
     line-height: 13px;
-    max-width: 251px;
+    max-width: unset;
   }
 
   .about__list {
@@ -2207,6 +2228,19 @@ p {
     bottom: -30px;
   }
 
+  .section__br_desctop {
+    display: none;
+  }
+
+  .section__br_mob {
+    display: inline;
+  }
+
+  .write {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
   .write__list {
     gap: 10px;
     display: -webkit-box;
@@ -2246,7 +2280,8 @@ p {
   }
 
   .edit {
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
   }
 
   .edit__container {
@@ -2286,7 +2321,7 @@ p {
   }
 
   .feedback {
-    padding-bottom: 30px;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
 

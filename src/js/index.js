@@ -13,8 +13,6 @@ const aboutSwiper = new Swiper('.about__slider', {
     loop: true,
     centered: true,
     autoplay: true,
-    effect: "cards",
-        grabCursor: true,
 });
 
     
@@ -44,4 +42,5 @@ const feedbackSwiper = new Swiper('.feedback__slider', {
       slideShadows: true,
     },
     loop: true,
+    autoplay: true,
 });

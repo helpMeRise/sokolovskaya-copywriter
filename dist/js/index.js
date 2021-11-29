@@ -5061,9 +5061,7 @@ aboutSlides.forEach(item => {
 const aboutSwiper = new Swiper('.about__slider', {
   loop: true,
   centered: true,
-  autoplay: true,
-  effect: "cards",
-  grabCursor: true
+  autoplay: true
 });
 const feedbackSlider = document.querySelector('.feedback__slider'),
       feedbackSliderWrap = document.querySelector('.feedback__list'),
@@ -5084,7 +5082,8 @@ const feedbackSwiper = new Swiper('.feedback__slider', {
     modifier: 1,
     slideShadows: true
   },
-  loop: true
+  loop: true,
+  autoplay: true
 });
 }();
 /******/ })()
