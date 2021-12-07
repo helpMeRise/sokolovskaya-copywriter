@@ -39,7 +39,7 @@ import webpack from 'webpack';
 import gulpImg from 'gulp-image';
 import gulpWebp from 'gulp-webp';
 import gulpAvif from 'gulp-avif';
-import svgSprite from 'gulp-svg-sprite';
+//import svgSprite from 'gulp-svg-sprite';
 
 let dev = false;
 
@@ -60,7 +60,7 @@ const path = {
 		sass: ['src/sass/**/*.sass', 'src/sass/**/*.scss'],
 		js: ['src/js/libs/*.js', 'src/js/index.js'],
 		img: 'src/img/**/*.*',
-		svg: 'src/svg/**/*.svg',
+		// svg: 'src/svg/**/*.svg',
 		imgF: 'src/img/**/*.{jpg,jpeg,png}',
 		assets: ['src/fonts/**/*.*', 'src/icons/**/*.*', 'src/video/**/*.*', 'src/public/**/*.*', ]
 	},
@@ -69,7 +69,7 @@ const path = {
 		js: 'src/**/*.js',
 		pug: 'src/**/*.pug',
 		css: ['src/**/*.sass', 'src/**/*.scss'],
-		svg: 'src/svg/**/*.svg',
+		// svg: 'src/svg/**/*.svg',
 		img: 'src/img/**/*.*',
 		imgF: 'src/img/**/*.{jpg,jpeg,png}',
 	},
@@ -190,18 +190,18 @@ export const img = () => gulp
 		once: true
 	}));
 
-export const svg = () => gulp.src(path.src.svg)
-	.pipe(svgSprite({
-		mode: {
-			stack: {
-				sprite: "../sprite.svg",
-			}
-		},
-	}))
-	.pipe(gulp.dest(path.dist.img))
-	.pipe(browserSync.stream({
-		once: true
-	}));
+// export const svg = () => gulp.src(path.src.svg)
+// 	.pipe(svgSprite({
+// 		mode: {
+// 			stack: {
+// 				sprite: "../sprite.svg",
+// 			}
+// 		},
+// 	}))
+// 	.pipe(gulp.dest(path.dist.img))
+// 	.pipe(browserSync.stream({
+// 		once: true
+// 	}));
 
 
 export const webp = () => gulp
@@ -263,7 +263,7 @@ export const server = () => {
 	// gulp.watch(path.watch.pug, pug);
 	gulp.watch(path.watch.css, scss);
 	gulp.watch(path.watch.js, js);
-	gulp.watch(path.watch.svg, svg);
+	// gulp.watch(path.watch.svg, svg);
 	gulp.watch(path.watch.img, img);
 	gulp.watch(path.watch.imgF, webp, avif);
 };
@@ -278,7 +278,7 @@ const develop = (ready) => {
 };
 
 
-export const base = gulp.parallel(html, scss, js, img, svg, webp, avif, copy);
+export const base = gulp.parallel(html, scss, js, img, webp, avif, copy);
 
 export const build = gulp.series(clear, base, critCSS)
 
